@@ -6,7 +6,7 @@
 <img width="238" alt="dft" src="https://user-images.githubusercontent.com/127461144/235883098-aa115555-5f5a-4eda-8ea5-dc5e893b8724.png">
 
 
-**고속 푸리에 변환(Fast Fourier Transform, FFT)** 은 주기성과 대칭성을 이용하여 DFT의 계산량을 줄이는 알고리즘으로, 시간 복잡도는 O($logN$)이다. 
+**고속 푸리에 변환(Fast Fourier Transform, FFT)** 은 주기성과 대칭성을 이용하여 DFT의 계산량을 줄이는 알고리즘으로, 시간 복잡도는 O($NlogN$)이다. 
 
 <img src="https://user-images.githubusercontent.com/127461144/235883474-70b59ecb-6de8-4111-91b8-8db21d6d5b87.jpg"  width="300" height="300">
 
@@ -37,7 +37,7 @@ DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로
 
 <img width="281" alt="최종" src="https://user-images.githubusercontent.com/127461144/235886560-dbe4ad24-2cfa-49c3-b454-f78cf1b02ada.png">
 
-이와 같이 N개의 데이터를 가진 DFT의 식을, $\frac{N}{2}$ 개의 두 DFT 식으로 표현해, 분할 정복의 형태로 변형시켰다. 따라서 두 DFT를 알고 있다면 k번의 연산만에 구할 수 있고, 총 시간복잡도는 O($logN$)이 된다.
+이와 같이 N개의 데이터를 가진 DFT의 식을, $\frac{N}{2}$ 개의 두 DFT 식으로 표현해, 분할 정복의 형태로 변형시켰다. 따라서 두 DFT를 알고 있다면 k번의 연산만에 구할 수 있고, 총 시간복잡도는 O($NlogN$)이 된다.
 
 
 
