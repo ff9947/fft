@@ -15,6 +15,7 @@ FFT는 신호를 개별 스펙트럼 구성 요소로 변환하여 신호에 대
 
 FFT를 구현하는 대표적인 알고리즘에는 쿨리-튜키 알고리즘(Cooley-Tukey algorithm)이 있다.
 
+
 ## FFT 시간 복잡도 계산
 쿨리-튜키 알고리즘(Cooley-Tukey algorithm)을 통해 DFT를 고속 계산할 것이다.
 쿨리-튜키 알고리즘(Cooley-Tukey algorithm) 은 분할 정복 알고리즘의 유형이다.
@@ -36,7 +37,7 @@ DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로
 
 <img width="281" alt="최종" src="https://user-images.githubusercontent.com/127461144/235886560-dbe4ad24-2cfa-49c3-b454-f78cf1b02ada.png">
 
-이와 같이 N개의 데이터를 가진 DFT의 식을, $\frac{N}{2}$ 개의 두 DFT 식으로 표현해, 분할 정복의 형태로 변형시켰다. 따라서 두 DFT를 알고 있다면 k번의 연산만에 구할 수 있고, 총 시간복잡도는 O()이 된다.
+이와 같이 N개의 데이터를 가진 DFT의 식을, $\frac{N}{2}$ 개의 두 DFT 식으로 표현해, 분할 정복의 형태로 변형시켰다. 따라서 두 DFT를 알고 있다면 k번의 연산만에 구할 수 있고, 총 시간복잡도는 O($logN$)이 된다.
 
 
 
