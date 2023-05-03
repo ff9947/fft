@@ -36,7 +36,7 @@ DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로
 
 <img width="281" alt="최종" src="https://user-images.githubusercontent.com/127461144/235886560-dbe4ad24-2cfa-49c3-b454-f78cf1b02ada.png">
 
-
+이와 같이 Ｎ개의 데이터에 대한 ＤＦＴ의 식을、 ₩＼ｆｒａｃ｛Ｎ｝｛２｝₩
 
 
 
