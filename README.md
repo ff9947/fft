@@ -53,17 +53,17 @@ $X_odd = \{X_1, X_3, X_5, X_7\}$
 
 FFT를 구현하기 전에 X를 정렬하자.
 
-'''
-vector<complex<double>> b(a);
-for (int i = 0; i < n; i++) {
-    int len = n, startIdx = 0, idx = i;
-    for(int len = n; len > 1; len >>= 1) {
-        if (idx & 1) startIdx += len >> 1;
-        idx >>= 1;
-    }
-    a[startIdx + idx] = b[i];
-}
-'''
+```
+vector<complex<double>> b(a);  
+for (int i = 0; i < n; i++) {  
+    int len = n, startIdx = 0, idx = i;  
+    for(int len = n; len > 1; len >>= 1) {  
+        if (idx & 1) startIdx += len >> 1;  
+        idx >>= 1;  
+    }  
+    a[startIdx + idx] = b[i];  
+}  
+```
 
 
 # 활용 분야
