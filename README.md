@@ -51,8 +51,19 @@ $X_odd = \{X_1, X_3, X_5, X_7\}$
 
 이 문제를 해결하기 위해서 처음부터 $X = \{X_0, X_4, X_2, X_6, X_1, X_5, X_3, X_7\}$과 같이 설정한다면 이웃한 수열끼리만 연산을 하면 된다. 이웃한 수열끼리 연산을 한다면 짝수와 홀수를 합치는 과정에서 추가적인 메모리 할당없이 현재 메모리를 재활용하면서 계산할 수 있다.
 
+FFT를 구현하기 전에 X를 정렬하자.
 
-
+'''
+vector<complex<double>> b(a);
+for (int i = 0; i < n; i++) {
+    int len = n, startIdx = 0, idx = i;
+    for(int len = n; len > 1; len >>= 1) {
+        if (idx & 1) startIdx += len >> 1;
+        idx >>= 1;
+    }
+    a[startIdx + idx] = b[i];
+}
+'''
 
 
 # 활용 분야
