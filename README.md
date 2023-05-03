@@ -24,10 +24,12 @@ FFT를 구현하는 대표적인 알고리즘에는 쿨리-튜키 알고리즘(C
 DFT의 식을 분할 정복 형태로 만들어 보자.
 먼저 N개의 데이터 을 짝수, 홀수 2개로 나눈다.
 
-사진
+<img width="158" alt="짝홀" src="https://user-images.githubusercontent.com/127461144/235886057-5c7fb4b7-2b67-4207-a620-4dcb890cd375.png">
+
 
 그 다음 DFT의 식에 대입해보자.
 
-사진
+<img width="413" alt="분할" src="https://user-images.githubusercontent.com/127461144/235886106-724367f3-cf7c-4ccb-b703-b930e2c3562d.png">
+
 
 DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로 나타낼 수 있다. 식을 정리해보면 아래와 같이 나타낼 수 있다.
