@@ -1,13 +1,13 @@
 # fft
 **이산 푸리에 변환(Discrete Fourier Transform, DFT)** 의 수식을 이용해서, 실제 신호에 대한 
-푸리에 변환을 하기에는 계산량이 너무 많다. DFT의 시간 복잡도는 O()으로, 아래의 수식을 
-따르면 곱 연산을 회, 덧셈 연산은 회 수행해야 한다.
+푸리에 변환을 하기에는 계산량이 너무 많다. DFT의 시간 복잡도는 O($$N^2$$))으로, 아래의 수식을 
+따르면 곱 연산을 $$N^2$$회, 덧셈 연산은 N(N-1)회 수행해야 한다.
 
 <img width="238" alt="dft" src="https://user-images.githubusercontent.com/127461144/235883098-aa115555-5f5a-4eda-8ea5-dc5e893b8724.png">
 
 
 **고속 푸리에 변환(Fast Fourier Transform, FFT)** 은 DFT의 계산량을 줄이는 알고리즘으로, 
-시간 복잡도는 O()이다. 
+시간 복잡도는 O($$\logN$$)이다. 
 
 <img src="https://user-images.githubusercontent.com/127461144/235883474-70b59ecb-6de8-4111-91b8-8db21d6d5b87.jpg"  width="300" height="300">
 
