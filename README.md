@@ -33,3 +33,14 @@ DFT의 식을 분할 정복 형태로 만들어 보자.
 
 
 DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로 나타낼 수 있다. 식을 정리해보면 아래와 같이 나타낼 수 있다.
+
+<img width="281" alt="최종" src="https://user-images.githubusercontent.com/127461144/235886560-dbe4ad24-2cfa-49c3-b454-f78cf1b02ada.png">
+
+
+
+
+
+
+
+
+
