@@ -9,7 +9,7 @@
 **고속 푸리에 변환(Fast Fourier Transform, FFT)** 은 DFT의 계산량을 줄이는 알고리즘으로, 
 시간 복잡도는 O()이다. 
 
-![fft2](https://user-images.githubusercontent.com/127461144/235883474-70b59ecb-6de8-4111-91b8-8db21d6d5b87.jpg) width="70" height="70"
+![fft2](https://user-images.githubusercontent.com/127461144/235883474-70b59ecb-6de8-4111-91b8-8db21d6d5b87.jpg<img width="７０" height="７５"></img>)
 
 
 FFT는 신호를 개별 스펙트럼 구성 요소로 변환하여 신호에 대한 주파수 정보를 제공한다. 오디오 및 음향 측정 과학 분야에 사용되며, 기계 또는 시스템 결함 분석, 품질 관리 및 상태 모니터링에 사용된다. 
