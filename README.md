@@ -76,6 +76,43 @@ $X_110 -> 011$ (3번째)
 $X_111 -> 111$ (7번째)  
 
 k의 위치는 k를 2진수로 변환했을 때 비트를 뒤집은 곳으로 이동한다.
+따라서 다음과 같이 구현할 수 있다.
+```
+void fft(vector<complex<double>> &a, bool inverse) {  
+    int n = a.size();  
+
+    for(int i = 0; i < n; i++) {  
+        int rev = 0;  
+        for(int j = 1, target = i; j < n; j <<= 1, target >>= 1) {  
+            rev = (rev << 1) + (target & 1);  
+        }  
+        if(i < rev) {  
+            swap(a[i], a[rev]);  
+        }  
+    }  
+
+    for(int len = 2; len <= n; len <<= 1) {  
+        double x = 2 * M_PI / len * (inverse ? -1 : 1);  
+        complex<double> diff(cos(x), sin(x));  
+        for(int i = 0; i < n; i += len) {  
+            complex<double> e(1);  
+            for(int j = 0; j < len/2; j++) {  
+                int cur = i + j;  
+                complex<double> even = a[cur];  
+                complex<double> oddE = a[cur + len/2] * e;  
+                a[cur] = even + oddE;  
+                a[cur + len/2] = even - oddE;  
+                e *= diff;  
+            }  
+        }  
+    }  
+    if(inverse) {  
+        for(int i = 0; i < n; i++) {  
+            a[i] /= n;  
+        }  
+    }  
+}  
+```
 
 # 활용 분야
 전파 천문학을 비롯한 과학 분야에서 디지털 신호 처리 및 이미지 분석 등 디지털 혁명을 가능케 한 고속 푸리에변환(FFT)은 함수 근삿값을 계산하는 알고리즘이다. 이 알고리즘은 복잡한 전자파 성질을 이해하기 위해 주파수를 함수로 대체 시각화한다.
