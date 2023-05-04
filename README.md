@@ -137,8 +137,17 @@ FFT알고리즘은 전파 천문학 등 다양한 과학 분야에서 디지털 
 
 ![FFT 결과](https://user-images.githubusercontent.com/127461144/235936838-ba12864d-a617-4a4c-b124-530663683b01.png)
 
+#참고
+http://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=1d681e003227004bffe0bdc3ef48d419&keyword=fft
 
+http://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=0917f07e76e87f95ffe0bdc3ef48d419&keyword=fft
 
+http://www.ktword.co.kr/test/view/view.php?m_temp1=2596
 
+https://infograph.tistory.com/332
 
+https://ohgym.tistory.com/16
 
+https://justicehui.github.io/hard-algorithm/2019/09/04/FFT/
+
+https://www.nti-audio.com/ko/%EC%A7%80-%EC%9B%90/%EC%B8%A1%EC%A0%95-%EB%85%B8%ED%95%98%EC%9A%B0/%EB%B9%A0%EB%A5%B8-fourier-%EB%B3%80%ED%99%98-fft
