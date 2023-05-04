@@ -36,20 +36,23 @@ DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로
 
 <img width="281" alt="최종" src="https://user-images.githubusercontent.com/127461144/235886560-dbe4ad24-2cfa-49c3-b454-f78cf1b02ada.png">
 
-이와 같이 N개의 데이터를 가진 DFT의 식을, $\frac{N}{2}$ 개의 두 DFT 식으로 표현해, 분할 정복의 형태로 변형시켰다. 따라서 두 DFT를 알고 있다면 k번의 연산만에 구할 수 있고, 총 시간복잡도는 O($NlogN$)이 된다.
+이와 같이 N개의 데이터를 가진 DFT의 식을, $\frac{N}{2}$ 개의 두 DFT 식으로 표현해, 분할 정복의 형태로 변형시켰다. 
 
 <img width="86" alt="복소수" src="https://user-images.githubusercontent.com/127461144/236095041-b82f1e34-80f5-4acd-bccf-972583d0cf4f.png">
 로 설정하고, $k=0$부터 살펴보자  
 
- <img width="266" alt="X(0)" src="https://user-images.githubusercontent.com/127461144/236096232-92ab206c-d1bf-4fae-aceb-7425d9e43fa9.png">  
+ <img width="266" alt="X(0)" src="https://user-images.githubusercontent.com/127461144/236096232-92ab206c-d1bf-4fae-aceb-7425d9e43fa9.png">    
 
 위의 식에서 총 N번의 곱셈 연산과 덧셈의 연산이 일어난다. 시간 복잡도는 O(N)으로 표현한다. 즉, N개의 원소에 대해서 2로 나눴을 때 연산량이 N회 발생한다.
 
-다음으로 $X_even$과 $X_odd$를 구하기 위해서, 각각 반으로 나눈다. $X_even$를 A와 B로 나누고, $X_odd$를 C와 D로 나누어 보자.
+다음으로 $X_even$과 $X_odd$를 구하기 위해서, 각각 반으로 나눈다. $X_even$를 A와 B로 나누고, $X_odd$를 C와 D로 나누어 보자.  
 
-<img width="268" alt="짝홀 나누기" src="https://user-images.githubusercontent.com/127461144/236097603-b8a77ec6-f0f9-492e-8d65-ea14db3c7033.png">
+<img width="268" alt="짝홀 나누기" src="https://user-images.githubusercontent.com/127461144/236097603-b8a77ec6-f0f9-492e-8d65-ea14db3c7033.png">  
 
 짝수항과 홀수항을 구하기 위해서도 N번의 연산이 필요하다. 이러한 과정을 원소가 2개가 될 때까지 반복하고, 마지막으로 원소가 2개 남았을 때에도 N번의 연산이 필요하다. 따라서 O($NlogN$)이 된다. 
+
+마지막으로 정리해보면 다음과 같은 식을 얻을 수 있다.  
+<img width="293" alt="최종식" src="https://user-images.githubusercontent.com/127461144/236099646-2a73287d-8bf7-4353-bda1-62c7daca00f1.png">  
 
 # FFT구현
 쿨리-튜키 알고리즘으로 구현할 수 있다. 재귀적으로 절반의 크기를 구하기 때문에 기본적으로 수열의 길이를 $2^N$으로 설정한다. 짝수항 DFT와 홀수항 DFT을 구해서 연산을 하면 계속 이에 해당하는 메모리를 할당해야 하는 문제점이 있다. 
