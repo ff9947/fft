@@ -41,11 +41,9 @@ DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로
 <img width="86" alt="복소수" src="https://user-images.githubusercontent.com/127461144/236095041-b82f1e34-80f5-4acd-bccf-972583d0cf4f.png">
 로 설정하고, $k = 0$부터 살펴보자
 
-$X(0) = X_even (0) + W^0 X_odd (0)$  
-$X(1) = X_even (1) + W^1 X_odd (1)$  
-$$\cdots$$  
-$X(N-1) = X_even (N-1) + W^(N-1) X_odd (N-1)$ 
+ <img width="266" alt="X(0)" src="https://user-images.githubusercontent.com/127461144/236096232-92ab206c-d1bf-4fae-aceb-7425d9e43fa9.png">
 
+위의 식에서 총 N번의 곱셈 연산과 덧셈의 연산이 일어난다. 시간 복잡도는 O(N)으로 표현한다. 
 
 # FFT구현
 쿨리-튜키 알고리즘으로 구현할 수 있다. 재귀적으로 절반의 크기를 구하기 때문에 기본적으로 수열의 길이를 $2^N$으로 설정한다. 짝수항 DFT와 홀수항 DFT을 구해서 연산을 하면 계속 이에 해당하는 메모리를 할당해야 하는 문제점이 있다. 
