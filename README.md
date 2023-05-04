@@ -137,7 +137,7 @@ FFT알고리즘은 전파 천문학 등 다양한 과학 분야에서 디지털 
 
 ![FFT 결과](https://user-images.githubusercontent.com/127461144/235936838-ba12864d-a617-4a4c-b124-530663683b01.png)
 
-#참고
+#참고  
 http://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=1d681e003227004bffe0bdc3ef48d419&keyword=fft
 
 http://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=0917f07e76e87f95ffe0bdc3ef48d419&keyword=fft
