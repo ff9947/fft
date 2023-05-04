@@ -39,7 +39,7 @@ DFT를 짝수항 DFT와 상수값이 곱해진 홀수항 DFT의 합의 형태로
 이와 같이 N개의 데이터를 가진 DFT의 식을, $\frac{N}{2}$ 개의 두 DFT 식으로 표현해, 분할 정복의 형태로 변형시켰다. 
 
 <img width="86" alt="복소수" src="https://user-images.githubusercontent.com/127461144/236095041-b82f1e34-80f5-4acd-bccf-972583d0cf4f.png">
-로 설정하고, $k=0$부터 살펴보자  
+로 설정하고, $k$ = 0부터 살펴보자  
 
  <img width="266" alt="X(0)" src="https://user-images.githubusercontent.com/127461144/236096232-92ab206c-d1bf-4fae-aceb-7425d9e43fa9.png">    
 
